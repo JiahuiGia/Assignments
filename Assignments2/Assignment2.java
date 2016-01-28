@@ -89,7 +89,7 @@ public class Assignment2 {
 						m = m + 1;
 				}
 				
-				if(n == 2)
+				if(n == 2)//should be m==2
 					return true;
 				else
 					return false;
@@ -130,6 +130,7 @@ public class Assignment2 {
 	 	/**
 	 	 * Find maximum and minimum in a given array, and return the max and min number
 	 	 */
+	 	 //Input:-1,-2,-3 Output:-3,0   Input:1,2,3 Output:0,3.   Find the bug
 	 	public int[] findMinMax(int[] nums){
 	 		int[] minmax = new int[2];
 	 		minmax[0] = 0;
@@ -157,7 +158,7 @@ public class Assignment2 {
 	 		int i;
 	 		for(i=0;i<n;i++){
 	 			if(i<=1)
-	 				fibonaccinumbers[i] = i;
+	 				fibonaccinumbers[i] = i;//should be "= 1", not i
 	 			else
 	 				fibonaccinumbers[i] = fibonaccinumbers[i-1] + fibonaccinumbers[i-2];
 	 		}
@@ -182,7 +183,7 @@ public class Assignment2 {
 	 			while(n>0){
 	 				lastN = n;
 	 				n = n/10;
-	 				d = lastN - n*10;
+	 				d = lastN - n*10;//you could use n%10 to get the remainder, like "13%10 = 3" "16%5 = 1"
 	 				sum = sum + d;
 	 			}
 	 			if(sum>10){

@@ -95,7 +95,7 @@ public class Assignment3 {
 		
 		int remainder;
 		
-		String digitsOfN = "" + n;
+		String digitsOfN = "" + Math.abs(n);
 		
 		remainder = n%digitsOfN.length();
 		

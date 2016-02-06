@@ -91,7 +91,7 @@ public class Assignment3 {
 	 * Given a integer 'n', return n%count, count is the number of digits of n
 	 * For example, n = 100, return 1
 	 */
-	public int countDigits(int n){
+	public int countDigits(int n){//input -10, output -1, should be 0                -2
 		
 		int remainder;
 		

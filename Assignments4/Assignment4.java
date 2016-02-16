@@ -52,7 +52,7 @@ public class Assignment4 {
 	 * "I like soccer" --> "soccer like I"
 	 */
 	public String reverseString2(String str) {
-
+//wrong result when the first word has more than one char. like input "Good Job", output "Job G"               -2
 		String reversedStr2 = "";
 		int tempEnd = str.length();
 
@@ -80,7 +80,7 @@ public class Assignment4 {
 	 * use 'split' function. e.g. "I like soccer" --> 3. "I have 15 dollars" -->
 	 * 4
 	 */
-	public int countWords(String str) {
+	public int countWords(String str) {//think about ESC: what if the input is "I am\nstudent"
 
 		if (str != "") {
 			int i;

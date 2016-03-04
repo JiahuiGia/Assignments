@@ -83,10 +83,9 @@ public class Midterm {
 			System.out.println("Exception: No Input!");
 			return 0;
 		} else {
-			for (int i = title.length() - 1; i > 0; i--) {
-				columnNumber += Math.pow(26, i);
+			for (int i = 0; i < title.length(); i++) {
+				columnNumber += Math.pow(26, title.length()-1-i)*(title.charAt(i)-'A'+1);
 			}
-			columnNumber += title.charAt(title.length() - 1) - 'A' + 1;
 			return columnNumber;
 		}
 	}

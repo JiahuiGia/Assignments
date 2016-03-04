@@ -23,7 +23,7 @@ public class Midterm {
 				continue;
 			}
 		}
-		System.out.println(Arrays.toString(nums));
+		//System.out.println(Arrays.toString(nums));
 	}
 
 	/*
@@ -72,7 +72,7 @@ public class Midterm {
 
 	/*
 	 * (10 points) Given a column title as appear in an Excel sheet, return its
-	 * corresponding column number. For example: A -> 1, B -> 2, ¡­ Z -> 26, AA
+	 * corresponding column number. For example: A -> 1, B -> 2, Â¡Â­ Z -> 26, AA
 	 * -> 27, AB -> 28
 	 * 
 	 */

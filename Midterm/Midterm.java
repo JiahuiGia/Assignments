@@ -12,7 +12,7 @@ public class Midterm {
 	 * will get extra 5 points as bonus.
 	 * 
 	 */
-	public void moveZeroes(int[] nums) {
+	public void moveZeroes(int[] nums) {//it doesn't work if there are continuous zeros. Like {0,0,1}.        -8 
 		for (int i = 0; i < nums.length; i++) {
 			if (nums[i] == 0) {
 				for (int j = i; j < nums.length - 1; j++) {
@@ -61,7 +61,7 @@ public class Midterm {
 	 * time, you will get extra 5 points.
 	 * 
 	 */
-	public boolean containsDuplicate(int[] nums) {
+	public boolean containsDuplicate(int[] nums) {//        +5
 
 		HashSet<Integer> hsOfNums = new HashSet<Integer>();
 		for (int i = 0; i < nums.length; i++) {
@@ -101,7 +101,7 @@ public class Midterm {
 	 * it in O(N) time, you will get extra 5 points.
 	 * 
 	 */
-	public int twoSum(int[] nums, int target) {
+	public int twoSum(int[] nums, int target) {//           +15
 
 		int count = 0;
 		HashSet<Integer> hsOfNums = new HashSet<Integer>();
